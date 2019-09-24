@@ -90,7 +90,7 @@ function should_terminate(p_winner, est_ctrs, mc, alpha=0.05) {
     }
 }
 
-function k_arm_bandit(ctrs, alpha=0.05, burn_in=1000, max_iter=100, draw=100, slient=false) {
+function k_arm_bandit(ctrs, alpha=0.05, burn_in=1000, max_iter=100000, draw=100, slient=false) {
     const n_arms = ctrs.length;
     const arms = [];
     let est_ctrs, idx;
